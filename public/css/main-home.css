@@ -1,0 +1,330 @@
+body {
+  font-family: 'Reem Kufi', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+.sign-button{
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+}
+.sign-button:hover{
+  cursor: pointer;
+  background-color: #555;
+  transition: 400ms;
+}
+nav {
+  background-color: #000000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.logo {
+  font-size: 36px;
+  color: #333;
+  text-align: center;;
+  margin-bottom: 0;
+}
+
+.section-one {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.header {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.section-one-paragraph {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-four {
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-four img {
+  width: 100%;
+  max-width: 500px;
+  margin-right: 50px;
+}
+
+.section-four .text {
+  flex: 1;
+}
+
+.section-four h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section-four p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.flex-group div {
+  flex: 1;
+}
+
+.section-nine {
+  background-color: #333;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.logo-container svg {
+  width: 100px;
+  fill: #fff;
+  transition: transform 0.3s ease;
+}
+
+.logo-container svg:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    height: 60px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .section-one {
+    height: 300px;
+  }
+/* Section Four */
+.section-four {
+  background-color: #000000;
+  padding: 50px 0;
+}
+
+.section-four h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-four .flex-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-four .flex-group div {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-four img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.section-four p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Section Seven */
+.section-seven {
+  background-color: #000000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-seven h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-seven p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-seven a {
+  display: inline-block;
+  background-color: #000000;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.section-seven a:hover {
+  background-color: #ddd;
+}
+
+/* Section Eight */
+.section-eight {
+  background-color: #000000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.section-eight h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-eight p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.h44{
+  color: #800000;
+  font-size:2rem;
+  margin-left:580px
+}
+.pp{
+  width: 500px;
+  color:white;
+  margin-left:140px
+}
+.news{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 200px;
+  width: 480px;
+}
+.map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 1000px;
+}
+.section-eight .flex-group-eight div {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-eight .flex-group-eight img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Section Nine */
+.section-nine {
+  background-color: #333;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-nine h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.section-nine svg {
+  fill: #fff;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.section-nine svg:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  .section-four .flex-group,
+  .section-eight .flex-group-eight {
+    flex-direction: column;
+  }
+}}
+
+span{
+  opacity: 0;
+  transition: all 2s ease;
+}
+span.fade{
+  opacity:1
+}
