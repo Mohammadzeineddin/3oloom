@@ -136,14 +136,14 @@ svg:hover {
 }
 
 /* use media queries to adjust the layout for smaller screens */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .header {
     font-size: 6vw; /* use a larger font size for smaller screens */
   }
 
   .sign-button {
-    margin-left: 415px; /* use relative units for margin */
-    width: 23%; /* make the button take up the full width of its container */
+    margin-left: 350px; /* use relative units for margin */
+    width: 35%; /* make the button take up the full width of its container */
   }
   .ftrlinks{
     display: inline-flex;
