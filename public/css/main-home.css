@@ -22,6 +22,13 @@ body {
   font-size: 4vw; /* use viewport units for font size */
   margin-top: 2rem; /* use relative units for margin */
 }
+span{
+  opacity:0;
+  transition:all 0.4s ease;
+}
+span.fade{
+  opacity:1;
+}
 .section-eight-paragraph{
   color: #FFD700;
   font-family: "Rakkas", sans-serif;
