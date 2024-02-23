@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #001f47;
+  font-size: 16px; /* set a base font size */
+}
+.header2{
+  color: #ef476f;
+  font-family: "Reem Kufi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 4vw; /* use viewport units for font size */
+  margin-top: 2rem; 
+}
+.header {
+  color: #ef476f;
+  font-family: "Reem Kufi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 4vw; /* use viewport units for font size */
+  margin-top: 2rem; /* use relative units for margin */
+}
+.section-eight-paragraph{
+  color: #FFD700;
+  font-family: "Rakkas", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5rem; /* use relative units for font size */
+  margin-top: 2rem; 
+}
+.section-one-paragraph{
+  color: #FFD700;
+  font-family: "Rakkas", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5rem; /* use relative units for font size */
+  margin-top: 2rem; 
+}
+.sign-button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 0.5rem 1rem; /* use relative units for padding */
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 1rem; /* use relative units for font size */
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 89%; /* use relative units for margin */
+  width: 10%; /* make the button take up the full width of its container */
+  
+}
+
+/* CSS */
+.sign-button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sign-button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.news-img{
+  width: 50%;
+  margin-left: 25%;
+  height: 450px; /* make the images take up the full width of their container */
+}
+.map-img {
+  width: 50%;
+  margin-left: 25%;
+  height: 450px; /* make the images take up the full width of their container */
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #001f47;
+  color: #ef476f;
+  font-family: "Reem Kufi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1rem; /* use relative units for font size */
+  margin-top: 2rem; /* use relative units for margin */
+}
+.footer-nav{
+  margin-left: 45%;
+  width: 50%;
+
+}
+.ftrlinks{
+display: inline-flex;
+margin-left: 10px;
+color: white;
+}
+svg {
+  fill: white;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+svg:hover {
+  transition: 200ms;
+  fill: grey;
+  animation: bubble 0.4s ease-out;
+}
+
+
+.ftrtxt{
+  color: grey;
+  margin-right: 300px;
+  width: 30%;
+}
+
+/* use media queries to adjust the layout for smaller screens */
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 6vw; /* use a larger font size for smaller screens */
+  }
+
+  .sign-button {
+    margin-left: 415px; /* use relative units for margin */
+    width: 23%; /* make the button take up the full width of its container */
+  }
+  .ftrlinks{
+    display: inline-flex;
+    margin: auto;
+    width: 50%;
+    }
+    .ftrtxt{
+      color: grey;
+      margin-right: auto;
+      
+      width: 70%;
+    }
+    
+    svg:hover {
+      transform: scale(1.1);
+      fill: grey;
+    }
+ .news-img, .map-img {
+    width: 50%;
+    height: 300px; /* make the images take up the full width of their container */
+  }
+  .footer {
+    flex-direction: column; /* switch to a column layout for smaller screens */
+  }
+}
