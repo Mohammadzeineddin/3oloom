@@ -142,7 +142,7 @@ svg:hover {
   }
 
   .sign-button {
-    margin-left: 250px; /* use relative units for margin */
+    margin-left: 225px; /* use relative units for margin */
     width: 35%; /* make the button take up the full width of its container */
   }
   .ftrlinks{
