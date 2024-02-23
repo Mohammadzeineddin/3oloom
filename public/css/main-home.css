@@ -136,7 +136,7 @@ svg:hover {
 }
 
 /* use media queries to adjust the layout for smaller screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .header {
     font-size: 6vw; /* use a larger font size for smaller screens */
   }
