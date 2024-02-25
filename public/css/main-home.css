@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #001f47;
+  background-color: #e0e0d1; /* light gray background color */
   font-size: 16px; /* set a base font size */
 }
 .header2{
-  color: #ef476f;
+  color: #8a6d3b; /* warm brown color */
   font-family: "Reem Kufi", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -14,7 +14,7 @@ body {
   margin-top: 2rem; 
 }
 .header {
-  color: #ef476f;
+  color: #8a6d3b; /* warm brown color */
   font-family: "Reem Kufi", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -22,15 +22,8 @@ body {
   font-size: 4vw; /* use viewport units for font size */
   margin-top: 2rem; /* use relative units for margin */
 }
-span{
-  opacity:0;
-  transition:all 0.4s ease;
-}
-span.fade{
-  opacity:1;
-}
 .section-eight-paragraph{
-  color: #FFD700;
+  color: #3b3b3b; /* dark gray color */
   font-family: "Rakkas", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -39,7 +32,7 @@ span.fade{
   margin-top: 2rem; 
 }
 .section-one-paragraph{
-  color: #FFD700;
+  color: #3b3b3b; /* dark gray color */
   font-family: "Rakkas", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -48,10 +41,10 @@ span.fade{
   margin-top: 2rem; 
 }
 .sign-button {
-  background-color: #c2fbd7;
+  background-color: #8a6d3b; /* warm brown color */
   border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
+  box-shadow: rgba(138, 109, 59, .2) 0 -25px 18px -14px inset, rgba(241, 183, 83, 0.15) 0 1px 2px, rgba(241, 183, 83, 0.15) 0 2px 4px, rgba(241, 183, 83, 0.15) 0 4px 8px, rgba(241, 183, 83, 0.15)0 8px 16px, rgba(241, 183, 83, 0.15) 0 16px 32px;
+  color: white; /* white text color */
   cursor: pointer;
   font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
   padding: 0.5rem 1rem; /* use relative units for padding */
@@ -67,35 +60,50 @@ span.fade{
   width: 10%; /* make the button take up the full width of its container */
   
 }
-
-/* CSS */
-.sign-button {
-  background-color: #c2fbd7;
-  border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: 0;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
 .sign-button:hover {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  box-shadow: rgba(241, 183, 83, 0.15) 0 -25px 18px -14px inset,rgba(241, 183, 83, 0.15)0 1px 2px,rgba(241, 183, 83, 0.15) 0 2px 4px,rgba(241, 183, 83, 0.15) 0 4px 8px,rgba(241, 183, 83, 0.15) 0 8px 16px,rgba(241, 183, 83, 0.15) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
-.img, .news-img, .map-img {
-  width: 50%;
+.grid {
+  display: grid;
+  width: 50rem;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
   margin-left: 25%;
-  height: 450px; /* make the images take up the full width of their container */
+}
+.grid__item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  
+  transition: 0.2s;
+}
+.grid__item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.card__content {
+  padding: 2rem 2rem;
+}
+.card__header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #8a6d3b;
+  margin-bottom: 1.5rem;
+}
+.card__text {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #3d3d3d;
 }
 .footer {
   display: flex;
@@ -141,16 +149,33 @@ svg:hover {
   margin-right: 300px;
   width: 30%;
 }
+span{
+  opacity:0;
+  transition:all 0.4s ease;
+}
+span.fade{
+  opacity:1;
+}
 
 /* use media queries to adjust the layout for smaller screens */
 @media only screen and (max-width: 600px) {
   .header {
     font-size: 6vw; /* use a larger font size for smaller screens */
   }
-
   .sign-button {
-    margin-left: 225px; /* use relative units for margin */
-    width: 35%; /* make the button take up the full width of its container */
+    margin-left: 415px; /* use relative units for margin */
+    width: 23%; /* make the button take up the full width of its container */
+  } 
+  .card__img {
+    display: block;
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+  }
+  .grid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
   .ftrlinks{
     display: inline-flex;
@@ -168,11 +193,6 @@ svg:hover {
       transform: scale(1.1);
       fill: grey;
     }
- .img, .news-img, .map-img {
-    width: 50%;
-    height: 300px; /* make the images take up the full width of their container */
-  }
-
   .footer {
     flex-direction: column; /* switch to a column layout for smaller screens */
   }
