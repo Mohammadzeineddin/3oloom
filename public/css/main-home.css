@@ -169,7 +169,7 @@ span.fade{
   .card__img {
     display: block;
     width: 100%;
-    height: 18rem;
+    height: 6rem;
     object-fit: cover;
   }
   .grid {
