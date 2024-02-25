@@ -168,8 +168,26 @@ span.fade{
     width: 33%;
   }
   
+  .card {
+    width: 100%;
+  }
+  
   .card__img {
-    height: 6rem;
+    height: 15rem;
+    object-fit: cover;
+  }
+  
+  .card__content {
+    padding: 1.5rem;
+  }
+  
+  .card__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card__text {
+    font-size: 1.2rem;
   }
   
   .grid {
