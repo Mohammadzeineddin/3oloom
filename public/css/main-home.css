@@ -159,61 +159,68 @@ span.fade{
 
 /* use media queries to adjust the layout for smaller screens */
 @media only screen and (max-width: 600px) {
-  .header {
-    font-size: 6vw;
-  }
-  
-  .sign-button {
-    margin-left: 246px;
-    width: 33%;
-  }
-  
-  .card {
-    width: 50%;
-    margin: 0 auto;
-  }
-  
-  .card__img {
-    height: 12rem;
-    object-fit: cover;
-  }
-  
-  .card__content {
-    padding: 1.5rem;
-  }
-  
-  .card__header {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .card__text {
-    font-size: 1rem;
-  }
-  
-  .grid {
-    margin-right: 50%;
-    width: 25%;
-  }
-  
-  .ftrlinks {
-    display: inline-flex;
-    margin: auto;
-    width: 50%;
-  }
-  
-  .ftrtxt {
-    color: grey;
-    margin-right: auto;
-    width: 70%;
-  }
-  
-  svg:hover {
-    transform: scale(1.1);
-    fill: grey;
-  }
-  
-  .footer {
-    flex-direction: column;
-  }
+ .header, .header2 {
+  font-size: 6vw;
+}
+
+/* Adjusting sign button margin and width */
+.sign-button {
+  margin-left: 10%;
+  width: 80%;
+}
+
+/* Adjusting card size */
+.card__img {
+  height: 12rem;
+}
+
+/* Adjusting card content padding and header font size */
+.card__content {
+  padding: 1.5rem;
+}
+
+.card__header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Adjusting card text font size */
+.card__text {
+  font-size: 1rem;
+}
+
+/* Adjusting grid size */
+.grid {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* Adjusting footer navigation and text */
+.footer-nav {
+  margin-left: auto;
+  width: 100%;
+}
+
+.ftrlinks {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.ftrtxt {
+  color: grey;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Adjusting SVG hover transition */
+svg:hover {
+  transform: scale(1.1);
+  fill: grey;
+}
+
+/* Adjusting footer direction */
+.footer {
+  flex-direction: column;
 }
