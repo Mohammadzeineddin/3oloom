@@ -165,7 +165,7 @@ span.fade{
 
 /* Adjusting sign button margin and width */
 .sign-button {
-  margin-left: 25%;
+  margin-left: 50%;
   width:35%;
 }
 
@@ -191,7 +191,7 @@ span.fade{
 
 /* Adjusting grid size */
 .grid {
-  width: 70%;
+  width: 20%;
   margin-left: 0;
 }
 
