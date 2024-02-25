@@ -164,7 +164,7 @@ span.fade{
   }
   .sign-button {
     margin-left: 250px; /* use relative units for margin */
-    width: 28%; /* make the button take up the full width of its container */
+    width: 33%; /* make the button take up the full width of its container */
   } 
   .card__img {
     display: block;
