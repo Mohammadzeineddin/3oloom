@@ -144,3 +144,78 @@ span {
 span.fade {
   opacity: 1;
 }
+@media only screen and (max-width: 600px) {
+ .header, .header2 {
+  font-size: 6vw;
+}
+.grid__item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+  width: 75%; /* Set the width of the card to 90% */
+  margin-right:200px; /* Center the card */
+}
+
+/* Adjusting sign button margin and width */
+.sign-button {
+  margin-left: 65%;
+  width:35%;
+}
+
+/* Adjusting card size */
+.card__img {
+  height: 12rem;
+}
+
+/* Adjusting card content padding and header font size */
+.card__content {
+  padding: 1.5rem;
+}
+
+.card__header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Adjusting card text font size */
+.card__text {
+  font-size: 1rem;
+}
+
+/* Adjusting grid size */
+.grid {
+  width: 400px;
+  margin-left: 0;
+}
+
+/* Adjusting footer navigation and text */
+.footer-nav {
+  margin-left: auto;
+  width: 100%;
+}
+
+.ftrlinks {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.ftrtxt {
+  color: grey;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Adjusting SVG hover transition */
+svg:hover {
+  transform: scale(1.1);
+  fill: grey;
+}
+
+/* Adjusting footer direction */
+.footer {
+  flex-direction: column;
+}
