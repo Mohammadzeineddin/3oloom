@@ -174,7 +174,7 @@ span.fade{
   }
   .grid {
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 25%;
     width: 50%;
   }
   .ftrlinks{
