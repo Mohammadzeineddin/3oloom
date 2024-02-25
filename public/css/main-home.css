@@ -163,7 +163,7 @@ span.fade{
     font-size: 6vw; /* use a larger font size for smaller screens */
   }
   .sign-button {
-    margin-left: 250px; /* use relative units for margin */
+    margin-left: 246px; /* use relative units for margin */
     width: 33%; /* make the button take up the full width of its container */
   } 
   .card__img {
