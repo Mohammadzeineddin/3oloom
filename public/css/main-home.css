@@ -173,7 +173,6 @@ span.fade{
     object-fit: cover;
   }
   .grid {
-    margin-left: auto;
     margin-right: 50%;
     width: 25%;
   }
