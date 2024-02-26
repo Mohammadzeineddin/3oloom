@@ -204,11 +204,15 @@ body {
   background-color: #e0e0d1;
   font-size: 16px;
 }
-
+.card__text {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #3d3d3d;
+}
 .header2,
 .header {
   color: #8a6d3b;
-  font-family: "Reem Kufi", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -219,7 +223,7 @@ body {
 .section-eight-paragraph,
 .section-one-paragraph {
   color: #3b3b3b;
-  font-family: "Rakkas", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -252,16 +256,26 @@ body {
   transform: scale(1.05) rotate(-1deg);
 }
 
+.card__img {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
 .grid {
-  display: grid;
-  width: 10rem;
-  grid-gap: 6rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  align-items: start;
-  margin-left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid__item {
   background-color: #fff;
+}
+.card__header {
+  font-size: 1rem;
+  margin-left: 5px;
+  font-weight: 500;
+  color: #8a6d3b;
+  margin-bottom: 1.5rem;
 }
 }
