@@ -244,7 +244,7 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-left: 89%;
-  width: 10%;
+  width: 35%;
 }
 
 .sign-button:hover {
@@ -254,11 +254,11 @@ body {
 
 .grid {
   display: grid;
-  width: 50rem;
+  width: 10rem;
   grid-gap: 6rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: start;
-  margin-left: 25%;
+  margin-left: 0%;
 }
 
 .grid__item {
