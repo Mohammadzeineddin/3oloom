@@ -274,10 +274,11 @@ body {
   height: 18rem;
   object-fit: cover;
 }
+  .card1{
+  margin:0;
+}
 .grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin:1px;
 }
 
 .grid__item {
