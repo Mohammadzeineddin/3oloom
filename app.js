@@ -14,8 +14,8 @@ app.set("view engine","ejs")
 app.get("",(req,res)=>{
     res.render("main-Home") 
 })
-app.get("/..map.ejs",(req,res)=>{ 
-    res.render("..map.ejs") 
+app.get("/map.ejs",(req,res)=>{ 
+    res.render("map.ejs") 
 }) 
  
  
