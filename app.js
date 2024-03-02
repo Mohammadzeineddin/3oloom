@@ -18,6 +18,8 @@ app.get("/map.ejs",(req,res)=>{
     res.render("map.ejs") 
 }) 
  
- 
+ app.get("/sign1-1.ejs",(req,res)=>{ 
+    res.render("sign1-1.ejs") 
+}) 
 //listen on port
 app.listen(port,()=> console.log("app listening on port 3000"))
