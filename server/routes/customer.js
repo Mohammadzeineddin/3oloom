@@ -8,4 +8,5 @@ router.get("/talabAjar",customerController.talabAjar)
 router.post("/talabAjar",customerController.postTalab)
 router.get("/ooroodAjar",customerController.ooroodAjar)
 router.get("/homeDaa",customerController.homedaa)
+router.get("/map",customerController.map)
 module.exports=router;
