@@ -38,7 +38,7 @@ passport.authenticate('google', { scope:
 
 app.get( '/auth/google/callback',
     passport.authenticate( 'google', {
-        successRedirect: 'http://localhost:3000/login',
+        successRedirect: '/login',
         failureRedirect: '/auth/google/failure'
 }));
 app.get("/auth/google/failure",isloggedin,(req,res)=>{ 
