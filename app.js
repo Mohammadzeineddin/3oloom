@@ -42,7 +42,7 @@ passport.authenticate('google', { scope:
 
 app.get( '/auth/google/callback',
     passport.authenticate( 'google', {
-        successRedirect: 'login',
+        successRedirect: 'https://threeoloom.onrender.com/login',
         failureRedirect: '/auth/google/failure'
 }));
 app.get("/auth/google/failure",isloggedin,(req,res)=>{ 
