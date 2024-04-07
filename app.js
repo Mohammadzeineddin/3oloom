@@ -52,6 +52,9 @@ app.get("/auth/protected",isloggedin,(req,res)=>{
     let name = req.user.displayName;
     res.send(`hello ${name}`)
 })
+app.get('/', function(req, res) {
+    res.render('main-Home');
+});
 app.post("/home-me7.ejs",function(req,res){
         console.log(req.body);
 })
