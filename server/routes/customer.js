@@ -1,7 +1,7 @@
 const express=require("express");
 const router=express.Router();
 const customerController=require("../controllers/customerController")
-router.get("/",customerController.home)
+router.get("/main-Home",customerController.home)
 router.get("/login",customerController.login)
 router.get("/me7",customerController.me7)
 router.get("/talabAjar",customerController.talabAjar)
