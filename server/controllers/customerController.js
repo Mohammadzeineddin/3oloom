@@ -1,5 +1,7 @@
 const Customer=require("../models/Customer")
 const mongoose=require("mongoose")
+res.render('main-Home');
+
 exports.homepage=async(req,res)=>{
     
     
