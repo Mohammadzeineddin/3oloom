@@ -35,6 +35,9 @@ app.get('/auth/google',
 passport.authenticate('google', { scope:
     [ 'email', 'profile' ], }
 ));
+app.get('/', function(req, res) {
+    res.render('main-Home');
+});
 
 app.get( '/auth/google/callback',
     passport.authenticate( 'google', {
