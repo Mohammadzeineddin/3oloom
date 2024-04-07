@@ -28,7 +28,7 @@ app.use(cors());
 //set views
 app.use(expressLayout)
 app.use(flash({sessionKeyName:"flashMessage"}))
-app.set("layout","./main-Home")
+app.set("layout","./customer/main-Home")
 app.set("view engine","ejs")
 app.use("/",require("./server/routes/customer.js"))
 app.get('/', function(req, res) {
@@ -42,7 +42,7 @@ passport.authenticate('google', { scope:
 
 app.get( '/auth/google/callback',
     passport.authenticate( 'google', {
-        successRedirect: '/views/customer/login',
+        successRedirect: './customer/login',
         failureRedirect: '/auth/google/failure'
 }));
 app.get("/auth/google/failure",isloggedin,(req,res)=>{ 
