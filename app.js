@@ -41,7 +41,7 @@ passport.authenticate('google', { scope:
 ));
 app.get('/login.ejs',function(req,res){
     res.render("login.ejs")
-}
+});
 
 app.get( '/auth/google/callback',
     passport.authenticate( 'google', {
