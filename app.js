@@ -28,7 +28,7 @@ app.use(cors());
 //set views
 app.use(expressLayout)
 app.use(flash({sessionKeyName:"flashMessage"}))
-app.set("layout","./layouts/main-Home")
+app.set("layouts","./layouts/main-Home")
 app.set("view engine","ejs")
 app.use("/",require("./server/routes/customer.js"))
 app.get('/', function(req, res) {
