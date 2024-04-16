@@ -1,25 +1,25 @@
 const mongoose=require("mongoose");
 const Schema = mongoose.Schema;
-const CustomerSchema=new Schema({
-    name:{
+const CustomerSchema2=new Schema({
+    aklName:{
         type:String,
         required:true
     },
-    city:{
+    aklCity:{
         type:String,
         required:true
     },
-    email:{
+    aklEmail:{
         type:String,
         required:true
     },
-    phone:{
+    aklPhone:{
         type:String,
         required:true
     },
-    price:{
+    foodType:{
         type:String,
         required:true
     },
 });
-module.exports=mongoose.model("Customer1",CustomerSchema)
+module.exports=mongoose.model("Customer2",CustomerSchema2)
