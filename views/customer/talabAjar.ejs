@@ -17,7 +17,7 @@
         <label for="customername">الاسم الثلاثي</label>
         <input type="text" id="name" name="name" required>	
         
-        <label for="customercity">مكان الأجار</label>
+        <label for="customercity">مكان الأيجار</label>
         <input type="text" id="city" name="city" required>	
 
         <label for="mail">البريد الالكتروني</label>
@@ -28,26 +28,20 @@
 
         <div class="price-input"> 
           <div class="price-field"> 
-              <span>السعر</span> 
-              <input type="text" 
-                    placeholder="100-85$"
-                    id="price" name="price" required>
+            <label for="price">السعر</label>
+            <select id="price" name="price">
+                <option value="200-300">200-300</option>
+                <option value="300-400">300-400</option>
+                <option value="400-450">400-450</option>
+              </select>
           </div>
         </div> 
       <div class="container">			
-        <button class="btn" type="submit">عرض الطلب</button>
+      <button id="sub" class="btn" type="submit">عرض الطلب</button></a>
       </div>
     </div>
        
         
       </form>
-      
-        <script>
-          function submitForm(form){
-            window.location.assign("/me7")
-            alert("لقد تم عرض طلبك")
-          }
-
-        </script>
 </body>
 </html>
