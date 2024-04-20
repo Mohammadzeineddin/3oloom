@@ -18,7 +18,13 @@
           <input type="text" id="name2" name="name2" required>	
           
           <label for="city2">مكان الشقة</label>
-          <input type="text" id="city2" name="city2" required>	
+          <select id="city2" name="city2" required>
+            <option value=""></option>
+              <option value="البقاع">البقاع</option>
+              <option value="بيروت">بيروت</option>
+              <option value="الضاحية">الضاحية</option>
+              <option value="جبل لبنان">جبل لبنان</option>
+            </select>
   
           <label for="email2">البريد الالكتروني</label>
           <input type="email" id="email2" name="email2" required>
@@ -28,10 +34,13 @@
   
           <div class="price-input"> 
             <div class="price-field"> 
-                <label>السعر</label> 
-                <input type="number" 
-                      placeholder="350$"
-                      id="price2" name="price2" required>
+              <label for="price">السعر</label>
+              <select id="price2" name="price2" required>
+                <option value=""></option>
+                  <option value="200-300">200-300</option>
+                  <option value="300-400">300-400</option>
+                  <option value="400-450">400-450</option>
+                </select>
             </div>
           </div> 
         <div class="container">			

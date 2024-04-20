@@ -16,9 +16,14 @@
           
         <label for="customername">الاسم الثلاثي</label>
         <input type="text" id="name" name="name" required>	
-        
-        <label for="customercity">مكان الأيجار</label>
-        <input type="text" id="city" name="city" required>	
+        <label for="city">المنطقة</label>
+        <select id="city" name="city" required>
+          <option value=""></option>
+            <option value="البقاع">البقاع</option>
+            <option value="بيروت">بيروت</option>
+            <option value="الضاحية">الضاحية</option>
+            <option value="جبل لبنان">جبل لبنان</option>
+          </select>
 
         <label for="mail">البريد الالكتروني</label>
         <input type="email" id="email" name="email" required>
@@ -29,7 +34,8 @@
         <div class="price-input"> 
           <div class="price-field"> 
             <label for="price">السعر</label>
-            <select id="price" name="price">
+            <select id="price" name="price"required>
+              <option value=""></option>
                 <option value="200-300">200-300</option>
                 <option value="300-400">300-400</option>
                 <option value="400-450">400-450</option>

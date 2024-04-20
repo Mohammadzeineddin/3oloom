@@ -18,7 +18,7 @@ const CustomerSchema3=new Schema({
         required:true
     },
     price2:{
-        type:Number,
+        type:String,
         required:true
     },
 });

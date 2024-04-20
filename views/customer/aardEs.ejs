@@ -16,9 +16,14 @@
             
           <label for="name3">الاسم الثلاثي</label>
           <input type="text" id="name3" name="name3" required>	
-          
-          <label for="city3">مكان الشقة</label>
-          <input type="text" id="city3" name="city3" required>	
+          <label for="city3">المنطقة</label>
+          <select id="city3" name="city3" required>
+            <option value=""></option>
+              <option value="البقاع">البقاع</option>
+              <option value="بيروت">بيروت</option>
+              <option value="الضاحية">الضاحية</option>
+              <option value="جبل لبنان">جبل لبنان</option>
+            </select>
   
           <label for="email3">البريد الالكتروني</label>
           <input type="email" id="email3" name="email3" required>
@@ -28,8 +33,9 @@
   
           <div class="price-input"> 
             <div class="price-field"> 
-                <label for="shit3">عدد الافرادالممكن استقباله</label>
-                <select id="shit3" name="shit3">
+                <label for="shit3">عدد الافراد الممكن استقباله</label>
+                <select id="shit3" name="shit3"required>
+                  <option value=""></option>
                     <option value="1-2(أفراد)">1-2(أفراد)</option>
                     <option value="2-3(أفراد)">2-3(أفراد)</option>
                     <option value="3-4(أفراد)">3-4(أفراد)</option>

@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="/css/3orood-ajar.css">
 </head>
 <body>
+    <div class="search-container">
+      <select id="citySelect" onchange="filterTable()">
+        <option value="">اختر المنطقة...</option>
+        <option value="البقاع">البقاع</option>
+        <option value="بيروت">بيروت</option>
+        <option value="الضاحية">الضاحية</option>
+        <option value="جبل لبنان">جبل لبنان</option>
+        <!-- Add more cities as needed -->
+    </select>
+    <select id="priceSelect" onchange="filterTable()">
+        <option value="">اختر السعر...</option>
+        <option value="100-200">100-200</option>
+        <option value="200-300">200-300</option>
+        <option value="300-400">300-400</option>
+        <option value="400-450">400-450</option>
+        <!-- Add more price ranges as needed -->
+    </select>
+</div>
     <div class="table-responsive">
 
         <table class="table table-bordered table-dark">
@@ -23,7 +41,7 @@
             </tr>
           </thead>
       
-          <tbody>
+          <tbody id="tableBody">
             <% customers3.forEach(element => { %>
               <tr class="align-middle">
                 <td><%= element.name2 %></td>
@@ -41,4 +59,25 @@
       </div>
     <a href="/me7"><button class="kabse">العودة الى الصفحة الرئسية</button></a>
 </body>
+<script>
+  function filterTable() {
+    var selectedCity = document.getElementById("citySelect").value;
+    var selectedPrice = document.getElementById("priceSelect").value;
+    var rows = document.getElementById("tableBody").getElementsByTagName("tr");
+
+    for (var i = 0; i < rows.length; i++) {
+        var city = rows[i].getElementsByTagName("td")[2].innerText;
+        var price = parseInt(rows[i].getElementsByTagName("td")[4].innerText);
+
+        var cityMatch = selectedCity === "" || city === selectedCity;
+        var priceMatch = selectedPrice === "" || price <= parseInt(selectedPrice);
+
+        if (cityMatch && priceMatch) {
+            rows[i].style.display = "";
+        } else {
+            rows[i].style.display = "none";
+        }
+    }
+}
+</script>
 </html>

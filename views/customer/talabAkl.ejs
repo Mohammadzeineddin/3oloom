@@ -21,14 +21,26 @@
         
         <label for="telephone">رقم الهاتف</label>
         <input type="tel" id="aklPhone" name="aklPhone" required>
-        
-        <label for="customercity">نوع الغذاء و الكمية</label>
-        <input type="text" id="foodType" name="foodType" required placeholder="حليب(5ك)">	
-       
+        <label for="foodType">اختر نوع الغذاء</label>
+        <select id="foodType" name="foodType"required>
+          <option value=""></option>
+          <option value="لحوم">لحوم</option>
+          <option value="أسماك">أسماك</option>
+          <option value="فواكه">فواكه</option>
+          <option value="خضروات">خضروات</option>
+          <!-- Add more food types as needed -->
+      </select>
  
-        <label for="customercity">مكان الطلب</label>
-        <input type="text" id="aklCity" name="aklCity" required>	
-     
+          <label for="aklCity">المنطقة</label>
+        <select id="aklCity" name="aklCity" required>
+          <option value=""></option>
+          <option value="لحوم">بيروت</option>
+          <option value="أسماك">البقاع</option>
+          <option value="فواكه">الضاحية</option>
+          <option value="خضروات">جبل لبنان</option>
+          <!-- Add more food types as needed -->
+      </select>
+ 
       <div class="container">			
         <button class="btn" type="submit">عرض الطلب</button>
       </div>

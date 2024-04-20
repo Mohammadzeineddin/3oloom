@@ -35,3 +35,39 @@ body{
   .btn:hover{
     cursor: pointer;
   }
+  .search-container {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom:20px
+}
+.search-container select {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Style the dropdown arrow */
+.search-container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 18px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.search-container select:hover {
+    border-color: #999;
+}
+
+/* Focus effect */
+.search-container select:focus {
+    outline: none;
+    border-color: #333;
+}
