@@ -238,7 +238,7 @@ span.fade{
     flex-direction: column; /* switch to a column layout for smaller screens */
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 body {
   margin: 0;
   padding: 0;
@@ -362,7 +362,142 @@ body {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
+  .header2,
+  .header {
+    font-size: 7vw; /* Adjusted font size for even smaller screens */
+  }
+  .sign-button {
+    margin-left: 1%; /* Adjusted margin-left for even smaller screens */
+    margin-top: 1rem; /* Adjusted margin-top for even smaller screens */
+    width: 140px; /* Keep width fixed for smallest screens */
+  }
+}
+@media only screen and (max-width: 450px) {
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0d1;
+  font-size: 16px;
+}
+.log img {
+  width: 70px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image behaves like a block element */
+  margin-right: 130px; 
+  margin-top: 10px;/* Center the image horizontally */
+  border-radius: 100px;
+}
+.card__text {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #3d3d3d;
+}
+.header2,
+.header {
+  color: #8a6d3b;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 7vw;
+  margin-top: 2rem;
+}
+
+.section-eight-paragraph,
+.section-one-paragraph {
+  color: #3b3b3b;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.sign-button {
+  background-color: #8a6d3b;
+  border-radius: 100px;
+  box-shadow: rgba(138, 109, 59, .2) 0 -25px 18px -14px inset, rgba(241, 183, 83, 0.15) 0 1px 2px, rgba(241, 183, 83, 0.15) 0 2px 4px, rgba(241, 183, 83, 0.15) 0 4px 8px, rgba(241, 183, 83, 0.15)0 8px 16px, rgba(241, 183, 83, 0.15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 1%;
+  margin-top: 15px;
+  width:140px;
+}
+
+.sign-button:hover {
+  box-shadow: rgba(241, 183, 83, 0.15) 0 -25px 18px -14px inset,rgba(241, 183, 83, 0.15)0 1px 2px,rgba(241, 183, 83, 0.15) 0 2px 4px,rgba(241, 183, 83, 0.15) 0 4px 8px,rgba(241, 183, 83, 0.15) 0 8px 16px,rgba(241, 183, 83, 0.15) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.grid__item2{
+  background-color: #fff;
+  width: 340px;
+}
+.grid__item1{
+  margin-top: 20px;
+  background-color: #fff;
+  width: 340px;
+  margin-right: 350px;
+}
+.card__header {
+  font-size: 1rem;
+  margin-left: 5px;
+  font-weight: 500;
+  color: #8a6d3b;
+  margin-bottom: 1.5rem;
+}
+.footer-nav{
+  margin-top: 50px;
+  width: 75px;
+}
+.ftrlinks{
+  display: inline-flex;
+  margin-left: 20px;
+  width: 50%;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 6vw; /* Adjusted font size for smaller screens */
+  }
+  .sign-button {
+    margin-left: 25%; /* Adjusted margin-left for smaller screens */
+    width: 50%; /* Adjusted width for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .header2,
   .header {
     font-size: 7vw; /* Adjusted font size for even smaller screens */
