@@ -121,12 +121,12 @@ exports.homedaa=async(req,res)=>{
     }
     res.render("customer/homeDaa",locals)
 }
-exports.akhbar=async(req,res)=>{
+exports.main2=async(req,res)=>{
     const locals={
         title : "تسجيل",
         description:"مرحبًا بكم في موقعنا الذي يهدف إلى تقديم الدعم والمساعدة للأشخاص في جنوب لبنان. نحن هنا لنكون جزءًا من رحلتكم نحو التحسين والتطوير. سواء كنتم تبحثون عن مكان للسكن ، مواد غذائية ، أو معلومات حول المجتمع المحلي و احدث الاخبار، فإننا هنا لنقدم لكم المساعدة والإرشاد."
     }
-    res.render("customer/akhbar",locals)
+    res.render("customer/main2",locals)
 }
 exports.postTalab=async(req,res)=>{
     console.log(req.body)
