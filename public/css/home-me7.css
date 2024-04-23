@@ -204,3 +204,49 @@ body{
     justify-content: center;
     align-items: center;
   }
+ /* Media Query for mobile devices */
+@media (max-width: 480px) {
+  nav {
+      height: 50px;
+  }
+  .log img {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Maintain aspect ratio */
+    display: block; /* Ensure the image behaves like a block element */ /* Center the image horizontally */
+    border-radius:100px ;
+    position: absolute;
+    margin-left: 15px;
+    top: 46px;
+  }
+  nav ul a li {
+    position: relative;
+    padding: 0 4px;
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 20px; /* Add margin to move the list items up */
+}
+
+  .active{
+    background: #f44566;
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.5s;
+    border-radius: 30px;
+    position:relative;
+    padding:0 4px 0 4px;
+    font-size: 15px;
+    text-decoration:none;
+  }
+  .div {
+    width: 400px; 
+    /* Adjust container width */
+    display: flex;
+    flex-direction: column; /* Align cards vertically */
+}
+}
