@@ -221,7 +221,7 @@ nav {
 nav ul a li {
   position: relative;
   padding: 0 4px;
-  font-size: 13px;
+  font-size: 12px;
   text-decoration: none;
   margin-bottom: 20px; /* Add margin to move the list items up */
 }
@@ -231,7 +231,7 @@ nav ul a li {
   list-style: none;
   display: inline-block;
   margin: 10px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   color: #ffffff;
   cursor: pointer;
@@ -240,7 +240,6 @@ nav ul a li {
   border-radius: 30px;
   position:relative;
   padding:0 4px 0 4px;
-  font-size: 15px;
   text-decoration:none;
 }
 .div {
