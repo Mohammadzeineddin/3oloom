@@ -116,7 +116,7 @@ nav ul li:hover::after {
 }
 
 .banner-image1 {
-  background-image: url(/img/rent.jpg);
+  background-image: url(/img/home1.png);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -126,7 +126,7 @@ nav ul li:hover::after {
 }
   
 .banner-image2 {
-  background-image: url(/img/akl.jpg);
+  background-image: url(/img/rent.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
