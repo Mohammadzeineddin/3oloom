@@ -205,7 +205,7 @@ body{
     align-items: center;
   }
  /* Media Query for mobile devices */
-@media (max-width: 480px) {
+ @media (max-width: 480px) {
   nav {
       height: 50px;
   }
@@ -224,8 +224,8 @@ body{
     font-size: 13px;
     text-decoration: none;
     margin-bottom: 20px; /* Add margin to move the list items up */
-}
-
+  }
+  
   .active{
     background: #f44566;
     list-style: none;
@@ -248,5 +248,5 @@ body{
     /* Adjust container width */
     display: flex;
     flex-direction: column; /* Align cards vertically */
-}
-}
+  }
+  }
