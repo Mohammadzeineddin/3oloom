@@ -342,7 +342,14 @@ body {
 }
 .footer-nav{
   margin-top: 50px;
+  width: 75px;
 }
+.ftrlinks{
+  display: inline-flex;
+  margin-left: 20px;
+  width: 50%;
+
+  }
 }
 
 @media only screen and (max-width: 600px) {
