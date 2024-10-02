@@ -20,6 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use("/css",express.static(__dirname+ "public/css"))
 app.use("/js",express.static(__dirname+ " public/js"))
 app.use("/img",express.static(__dirname+ "public/img"))
+app.use("/sitemap",express.static(__dirname+ "public/sitemap"))
 app.use("/sitemap.xml",express.static(__dirname+ "public/sitemap.xml"))
 app.get('/sitemap.xml', (req, res) => {
   res.header('Content-Type', 'application/xml');
