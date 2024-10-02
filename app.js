@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express= require ("express");
 const expressLayout=require("express-ejs-layouts")
+const path = require('path');
 const flash=require("connect-flash")
 const session = require("express-session")
 const connectDB=require("./server/config/db.js")
@@ -21,6 +22,17 @@ app.use("/img",express.static(__dirname+ "public/img"))
 app.use("/sitemap.xml",express.static(__dirname+ "public/sitemap.xml"))
 app.get('/sitemap.xml', (req, res) => {
   res.header('Content-Type', 'application/xml');
+  const sitemap = `
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://jnoubna.onrender.com/</loc>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+    </url>
+  </urlset>`;
+  res.send(sitemap);
+});
 app.use(session({secret: "secret",
 resave: false,
 saveUninitialized: true,
