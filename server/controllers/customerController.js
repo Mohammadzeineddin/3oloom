@@ -28,13 +28,6 @@ exports.map=async(req,res)=>{
     } 
     res.render("customer/map",locals)
 }
-exports.sitemap=async(req,res)=>{
-    const locals={
-        title : "تسجيل",
-        description:"مرحبًا بكم في موقعنا الذي يهدف إلى تقديم الدعم والمساعدة للأشخاص في جنوب لبنان. نحن هنا لنكون جزءًا من رحلتكم نحو التحسين والتطوير. سواء كنتم تبحثون عن مكان للسكن ، مواد غذائية ، أو معلومات حول المجتمع المحلي و احدث الاخبار، فإننا هنا لنقدم لكم المساعدة والإرشاد."
-    } 
-    res.render("customer/sitemap",locals)
-}
 exports.me7=async(req,res)=>{
     const locals={
         title : "تسجيل",
