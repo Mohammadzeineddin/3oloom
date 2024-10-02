@@ -16,7 +16,7 @@ connectDB();
 //static  
 app.get('/sitemap.xml', (req, res) => {
   const links = [
-    { url: '/layouts/main-Home', changefreq: 'daily', priority: 1.0 },
+    { url: '/main-Home', changefreq: 'daily', priority: 1.0 },
     { url: '/main2', changefreq: 'monthly', priority: 0.8 },
     { url: '/map', changefreq: 'monthly', priority: 0.8 },
     // Add more URLs here
