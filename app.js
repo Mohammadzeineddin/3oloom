@@ -30,6 +30,16 @@ app.get('/sitemap.xml', (req, res) => {
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
     </url>
+     <url>
+    <loc>https://jnoubna.onrender.com/main2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jnoubna.onrender.com/map</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   </urlset>`;
   res.send(sitemap);
 });
