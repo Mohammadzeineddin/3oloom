@@ -14,6 +14,13 @@ const cors =require("cors");
 require("./auth")
 connectDB(); 
 //static  
+app.get('/sitemap.xml', (req, res) => {
+  const links = [
+    { url: '/', changefreq: 'daily', priority: 1.0 },
+    { url: '/main2', changefreq: 'monthly', priority: 0.8 },
+    { url: '/map', changefreq: 'monthly', priority: 0.8 },
+    // Add more URLs here
+  ];
 app.use(express.urlencoded({extended:true}));
 app.use(express.json())
 app.use(express.static("public"))
