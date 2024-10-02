@@ -43,7 +43,17 @@ app.use("/",require("./server/routes/customer.js"))
 app.get('/', function(req, res) {
     res.render('main-Home');
 });
+ // Create a stream to write to
+  const sitemapStream = new SitemapStream({ hostname: 'https://jnoubna.onrender.com' });
 
+  // Convert stream to a promise
+  streamToPromise(Readable.from(links).pipe(sitemapStream)).then((data) => {
+    res.header('Content-Type', 'application/xml');
+    res.send(data.toString());
+  }).catch((err) => {
+    res.status(500).end();
+  });
+});
 app.get('/auth/google', 
 passport.authenticate('google', { scope:
     [ 'email', 'profile' ], }
