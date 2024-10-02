@@ -1,7 +1,5 @@
 require("dotenv").config();
 const express= require ("express");
-const { SitemapStream, streamToPromise } = require('sitemap');
-const { Readable } = require('stream');
 const expressLayout=require("express-ejs-layouts")
 const flash=require("connect-flash")
 const session = require("express-session")
@@ -14,13 +12,6 @@ const cors =require("cors");
 require("./auth")
 connectDB(); 
 //static  
-app.get('/sitemap.xml', (req, res) => {
-  const links = [
-    { url: '/main-Home', changefreq: 'daily', priority: 1.0 },
-    { url: '/main2', changefreq: 'monthly', priority: 0.8 },
-    { url: '/map', changefreq: 'monthly', priority: 0.8 },
-    // Add more URLs here
-  ];
 app.use(express.urlencoded({extended:true}));
 app.use(express.json())
 app.use(express.static("public"))
@@ -42,17 +33,6 @@ app.set("view engine","ejs")
 app.use("/",require("./server/routes/customer.js"))
 app.get('/', function(req, res) {
     res.render('main-Home');
-});
- // Create a stream to write to
-  const sitemapStream = new SitemapStream({ hostname: 'https://jnoubna.onrender.com' });
-
-  // Convert stream to a promise
-  streamToPromise(Readable.from(links).pipe(sitemapStream)).then((data) => {
-    res.header('Content-Type', 'application/xml');
-    res.send(data.toString());
-  }).catch((err) => {
-    res.status(500).end();
-  });
 });
 app.get('/auth/google', 
 passport.authenticate('google', { scope:
