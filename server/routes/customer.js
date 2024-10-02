@@ -19,5 +19,4 @@ router.get("/talbatAkl",customerController.talbatAkl)
 router.get("/homeDaa",customerController.homedaa)
 router.get("/map",customerController.map)
 router.get("/main2",customerController.main2)
-router.get("/sitemap",customerController.sitemap)
 module.exports=router;
