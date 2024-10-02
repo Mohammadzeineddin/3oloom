@@ -1,5 +1,7 @@
 require("dotenv").config();
 const express= require ("express");
+const { SitemapStream, streamToPromise } = require('sitemap');
+const { Readable } = require('stream');
 const expressLayout=require("express-ejs-layouts")
 const flash=require("connect-flash")
 const session = require("express-session")
